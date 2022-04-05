@@ -1,0 +1,13 @@
+1) Numero di lettere inseriti nella soluzione parziale (anagramma non ancora completato)
+2) anagramma non ancora completato (ovvero contiene soltanto alcune delle lettere disponibili della parola iniziale)
+3) if(parziale.length == parola.length) soluzioneparzialecompleta
+4) nel caso di lettere ripetute nella parola di partenza, potrei avere degli anagrammi ripetuti (perciò, anche se la soluzione è valida,
+	non è comunque accettabile)
+5) Una soluzione completa è valida se non è già contenuta nella List<String> soluzione (rimanendo comunque valida, non viene accettata)
+6) for(int i = 0;i<rimanenti.length();i++){
+		ricorsione(parziale+rimanenti.charAt(i), livello+1, rimanenti.subString(0,i)+rimanenti.subString(i+1));
+7) String (se voglio identificare le parola doppie, ho bisogno di salvare le soluzione in una List<String> = new ArrayList<String>()
+8) Integer livello, String parziale, String paroleRimanenti
+
+		
+		
